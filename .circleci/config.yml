@@ -17,7 +17,9 @@ jobs:
 
       - store_artifacts:
           path: docs/_build/html
+      - store_artifacts:
           path: gen/index.html
+      - store_artifacts:
           path: client-server/index.html
 
       - run:
