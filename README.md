@@ -1,4 +1,4 @@
 # testgiles2
 
-tewst
+test
 test
