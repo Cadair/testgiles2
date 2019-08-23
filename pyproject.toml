@@ -1,9 +1,20 @@
-[ tool.giles ]
+[ tool.gilesbot ]
 
-  [ tool.giles.circleci_artifacts.docs ]
+  [ tool.gilesbot.circleci_artifacts.docs ]
     url = "gen/index.html"
     message = "Click details to preview the HTML documentation."
 
-  [ tool.giles.circleci_artifacts.swagger ]
+  [ tool.gilesbot.circleci_artifacts.swagger ]
     url = "client-server/index.html"
     message = "Click to preview the swagger build."
+    
+  [ tool.gilesbot.pull_requests ]
+    enabled = true
+  
+  [ tool.gilesbot.towncrier_changelog ]
+    enabled = true
+    changelog_skip_label = "no changelog"
+    help_url = "https://github.com/DKISTDC/dkist/changelog/README.rst"
+
+  [ tool.gilesbot.milestones ]
+    enabled = true
