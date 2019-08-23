@@ -17,6 +17,8 @@ jobs:
 
       - store_artifacts:
           path: docs/_build/html
+          path: gen/index.html
+          path: client-server/index.html
 
       - run:
           name: "Built documentation is available at:"
