@@ -6,6 +6,14 @@ jobs:
     steps:
       - run: mkdir -p docs/_build/html
       - run: wget http://sunpy.org/index.html -O docs/_build/html/index.html
+      
+      
+      - run: mkdir -p gen
+      - run: wget https://9315-24998719-gh.circle-artifacts.com/0/root/project/scripts/gen/index.html -O gen/index.html
+      
+      
+      - run: mkdir -p client-server
+      - run: https://9316-24998719-gh.circle-artifacts.com/0/root/project/api/client-server/index.html -O client-server/index.html
 
       - store_artifacts:
           path: docs/_build/html
